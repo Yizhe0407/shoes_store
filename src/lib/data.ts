@@ -48,6 +48,7 @@ export const commodity = {
       title: "男性商品",
       url: "#",
       icon: Footprints,
+      isActive: true,
       items: [
         {
           title: "運動鞋",
@@ -67,6 +68,7 @@ export const commodity = {
       title: "精選配件",
       url: "#",
       icon: BookOpen,
+      isActive: true,
       items: [
         {
           title: "鞋墊",
