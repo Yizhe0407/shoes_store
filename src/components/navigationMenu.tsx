@@ -57,7 +57,7 @@ export function NavigationMenu() {
       <NavigationMenuList>
         {/* 商品分類 */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger>商品分類</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-transparent">商品分類</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <ListItem href="/" title="女性商品">
@@ -76,7 +76,7 @@ export function NavigationMenu() {
 
         {/* Components */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="bg-transparent">Components</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -136,7 +136,7 @@ function StaticLink({ href, title }: { href: string; title: string }) {
   return (
     <NavigationMenuItem>
       <Link href={href} legacyBehavior passHref>
-        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+        <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent`}>
           {title}
         </NavigationMenuLink>
       </Link>

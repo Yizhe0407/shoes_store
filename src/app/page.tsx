@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-col justify-center">
       <Carousel className="max-w-7xl mx-auto">
         <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10" />
 
