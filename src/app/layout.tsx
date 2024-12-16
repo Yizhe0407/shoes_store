@@ -44,7 +44,7 @@ export default function RootLayout({
 
         <div className="flex md:hidden">
           <SidebarProvider className="flex flex-col">
-            <div className="flex items-center">
+            <div className="sticky top-0 z-50 bg-white/90 flex items-center">
               <AppSidebar />
               <CustomTrigger />
               <Link href="/" className="">
@@ -59,9 +59,9 @@ export default function RootLayout({
         </div>
 
         {/* Large screen: Show NavigationMenu */}
-        <div className="hidden md:flex justify-center w-full px-6">
-          <div className="flex flex-col">
-            <div className="flex space-x-8 py-4">
+        <div className="hidden md:flex justify-center w-full">
+          <div className="flex flex-col w-full">
+            <div className="sticky top-0 z-50 bg-white/90 flex space-x-8 py-4 px-20">
               <Link href="/">
                 <Image src="/images/logo1.png" width={120} height={100} alt="logo" />
               </Link>
