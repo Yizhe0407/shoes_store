@@ -6,7 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { AppSidebar } from "@/components/app-sidebar"
 import { NavigationMenu } from "@/components/navigationMenu";
-import { SidebarProvider  } from "@/components/ui/sidebar"
+import {
+  SidebarInset,
+  SidebarProvider,
+} from "@/components/ui/sidebar"
 import CustomTrigger from "@/components/CustomTrigger"
 
 
@@ -33,7 +36,7 @@ export default function RootLayout({
 }>) {
 
   return (
-    
+
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
@@ -49,7 +52,9 @@ export default function RootLayout({
               </Link>
             </div>
 
-            {children}
+            <SidebarInset>
+              {children}
+            </SidebarInset>
           </SidebarProvider>
         </div>
 

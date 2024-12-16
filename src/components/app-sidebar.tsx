@@ -1,7 +1,8 @@
 // 側邊欄
 "use client";
 
-import * as React from "react";
+import React from 'react'
+import { useSidebar } from "@/components/ui/sidebar"
 import {
   Sidebar,
   SidebarMenu,
@@ -18,6 +19,12 @@ import { NavMain } from "@/components/nav-main";
 import { data, commodity } from "@/lib/data"; // 匯入資料
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const { setOpenMobile } = useSidebar()
+
+  const closeSidebar = () => { // 關閉側邊欄
+    setOpenMobile(false)
+  }
+
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
@@ -47,7 +54,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <SidebarMenu>
                 {item.items.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild>
+                    <SidebarMenuButton onClick={() => closeSidebar()}>
                       <Link href={item.url}>{item.title}</Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
@@ -58,5 +65,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         ))}
       </SidebarContent>
     </Sidebar>
+
   );
 }
