@@ -11,11 +11,11 @@ export const data = {
         },
         {
           title: "最新消息",
-          url: "#",
+          url: "/news",
         },
         {
           title: "聯絡我們",
-          url: "#",
+          url: "/contact",
         },
       ],
     },
@@ -26,61 +26,61 @@ export const commodity = {
   navMain: [
     {
       title: "女性商品",
-      url: "#",
+      url: "/products/women",
       icon: Footprints,
       isActive: true,
       items: [
         {
           title: "跟鞋",
-          url: "#",
+          url: "/products/women/heels",
         },
         {
           title: "平底鞋",
-          url: "#",
+          url: "/products/women/flats",
         },
         {
           title: "長靴",
-          url: "#",
+          url: "/products/women/boots",
         },
       ],
     },
     {
       title: "男性商品",
-      url: "#",
+      url: "/products/men",
       icon: Footprints,
       isActive: true,
       items: [
         {
           title: "運動鞋",
-          url: "#",
+          url: "/products/men/sports",
         },
         {
           title: "休閒鞋",
-          url: "#",
+          url: "/products/men/casual",
         },
         {
           title: "涼拖鞋",
-          url: "#",
+          url: "/products/men/sandals",
         },
       ],
     },
     {
       title: "精選配件",
-      url: "#",
+      url: "/products/accessories",
       icon: BookOpen,
       isActive: true,
       items: [
         {
           title: "鞋墊",
-          url: "#",
+          url: "/products/accessories/insoles",
         },
         {
           title: "鞋材保養品",
-          url: "#",
+          url: "/products/accessories/care",
         },
         {
           title: "周邊",
-          url: "#",
+          url: "/products/accessories/others",
         },
       ],
     },
