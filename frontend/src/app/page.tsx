@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Carousel Section */}
-      <div className="flex-grow flex flex-col justify-center">
+      <div className="flex-grow flex flex-col">
         <Carousel className="max-w-7xl mx-auto">
           <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10" />
 
